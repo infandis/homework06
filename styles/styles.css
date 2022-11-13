@@ -67,3 +67,13 @@
 .menu__item:hover .form {
     display: block;
 }
+
+.main {
+    background-image: url(../img/seychelles-panorama.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.search__item {
+    display: inline-block;
+}

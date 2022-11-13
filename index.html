@@ -37,35 +37,63 @@
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">
-                            ВОЙТИ/ЗАРЕГИСТРИРОВАТЬСЯ
+                            ВОЙТИ / ЗАРЕГИСТРИРОВАТЬСЯ
                         </a>
-                        <form action="https://fom.in.ua/echo" class="form">
-                            <p class="form__item">
+                        <form action="https://fom.in.ua/echo" class="dropdown_form">
+                            <p class="dropdown_form__item">
                                 E-mail
-                                <input class= "form__email" type="email" name="email" autofocus="autofocus" placeholder="user@domain.com"> 
+                                <input class= "dropdown_form__email" type="email" name="email" autofocus="autofocus" placeholder="user@domain.com"> 
                             </p>
-                            <p class="form__item">
+                            <p class="dropdown_form__item">
                                 Пароль: 
-                                <input class="form__password" type="password" name="password"> 
+                                <input class="dropdown_form__password" type="password" name="password"> 
                             </p>
-                            <p class="form__item">
-                                <input class="form__submit" type="submit" value="Send"> 
+                            <p class="dropdown_form__item">
+                                <input class="dropdown_form__submit" type="submit" value="Войти"> 
                             </p>
                         </form>
                     </li>
                 </ul>
             </header>
-            <main class="main">
-                <div class="search">
+            <div class="search">
+                <form action="https://fom.in.ua/echo">
                     <ul class="search__menu">
-                        <li class="search__item">ОТКУДА</li>
-                        <li class="search__item">КУДА</li>
-                        <li class="search__item">ДАТА ВЫЛЕТА</li>
-                        <li class="search__item">НОЧИ</li>
-                        <li class="search__item">ПОИСК</li>
+                        <li class="search__item">
+                            ОТКУДА:
+                            <select name="select" class="search__select">
+                                <option value="Kiyv">
+                                    Киев
+                                </option>
+                                <option value="Lviv">
+                                    Львов
+                                </option>
+                                <option value="Varshava">
+                                    Варшава
+                                </option>
+                                <option value="Budapesht">
+                                    Будапешт
+                                </option>
+                                <option value="Praha">
+                                    Прага
+                                </option>  
+                            </select>                              
+                        </li>
+                        <li class="search__item"> 
+                            КУДА:
+                            <input type="text" name="text" class="search__text" value="" placeholder="Введите страну или город">                                           
+                        </li>
+                        <li class="search__item">                           
+                            ДАТА ВЫЛЕТА:
+                            <input type="date" name="date" class="search__date" min="2022-11-13" max="2023-07-30"/>                            
+                        </li>
+                        <li class="search__item">                     
+                            <input class="search__submit" type="submit" value="ИСКАТЬ">
+                        </li>
                     </ul>
-                </div>
-            </main>
+                </form>                          
+            </div>
+            
+            
 
 
 

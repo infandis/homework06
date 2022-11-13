@@ -1,0 +1,69 @@
+.header,
+.shop__wrap,
+.logo__link,
+.menu {
+    display: flex; 
+    flex-direction: row;
+}
+.header { /* чтобы наша верхняя часть была в строчку */
+    justify-content: space-around;
+}
+
+/* 10 */
+.logo { /* общая ширина логотипа */
+    width: 10%; 
+}
+
+.logo__link { /* чтобы в логотипе всё шло в строчку */
+    justify-content: center;
+    align-items: center;
+}
+
+/* 10 */
+.menu__link, /* цвет текста */
+.logo__text {
+    color: black;
+}
+
+/* 10 */
+.logo__picture {
+    width: 40%;
+    padding: 2%;
+}
+
+/* 10 */
+.menu {
+    justify-content: space-around; /* расположение меню  */
+    align-items: center;
+    width: 40%;
+    margin: 1%;   
+}
+
+.menu__link, /* чтобы ссылочки не подчеркивались */
+.logo__link {
+    text-decoration: none;
+}
+
+/* 20 */
+.menu__link:hover, /* чтобы ссылочки подчеркивались при наведении */
+.logo__link:hover {
+    text-decoration: underline;
+}
+
+.form__item {
+    position: relative;
+    margin-bottom: 1%;
+
+}
+
+.form {
+    position: absolute;
+    display: none;
+
+    
+    
+}
+
+.menu__item:hover .form {
+    display: block;
+}

@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <wrapper class="wrapper">
+            <header class="header">
+                <div class="logo"> <!-- Кликабельный логотип -->
+                    <h1 class="logo__title">
+                        <a class="logo__link" href="#">
+                            <img class="logo__picture" src="img/logo.png" alt="logo">
+                            <span class="logo__text">GO-GO</span>
+                        </a>
+                    </h1> 
+                </div>
+                <ul class="menu"> <!-- Верхушка с меню -->
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            ТУРЫ
+                        </a>
+                    </li>
+                    <li class="menu__item"> 
+                        <a href="#" class="menu__link">
+                            ТИПЫ ОТДЫХА
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            СТРАНЫ
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            ВОЙТИ/ЗАРЕГИСТРИРОВАТЬСЯ
+                        </a>
+                        <form action="https://fom.in.ua/echo" class="form">
+                            <p class="form__item">
+                                E-mail
+                                <input class= "form__email" type="email" name="email" autofocus="autofocus" placeholder="user@domain.com"> 
+                            </p>
+                            <p class="form__item">
+                                Пароль: 
+                                <input class="form__password" type="password" name="password"> 
+                            </p>
+                            <p class="form__item">
+                                <input class="form__submit" type="submit" value="Send"> 
+                            </p>
+                        </form>
+                    </li>
+                </ul>
+            </header>    
+
+
+
+
+
+        </wrapper>
+    </body>
+    </html>

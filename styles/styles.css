@@ -1,6 +1,6 @@
 
 .header,
-.shop__wrap,
+.primary__wrap,
 .logo__link,
 .menu,
 .search__menu {
@@ -104,5 +104,18 @@
 .search__date {
     padding: 3%;
     width: 100%;
+}
 
+.primary {
+    width: 85%;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+.primary__item {
+    width: 2%5;
+}
+
+.primary__img {
+    width: 100%;
 }

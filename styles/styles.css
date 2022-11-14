@@ -3,7 +3,6 @@ body {
     background-size: cover;  
 }
 
-
 .header,
 .shop,
 .logo__link,
@@ -12,12 +11,12 @@ body {
     display: flex; 
     flex-direction: row;
 }
+
 .header,
 .search__menu { 
     justify-content: space-around;
 }
 
-/* 10 */
 .logo { /* общая ширина логотипа */
     width: 10%; 
 }
@@ -27,23 +26,29 @@ body {
     align-items: center;
 }
 
-/* 10 */
 .menu__link, /* цвет текста */
 .logo__text {
     color: black;
 }
 
-/* 10 */
 .logo__picture {
-    width: 40%;
+    width: 50%;
     padding: 2%;
 }
 
-.header {
-    background-color: rgba(152, 251, 152, 0.8)  
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+.header,
+.wrap {
+    background-color: rgba(152, 251, 152, 0.8);
+    
 }
 
-/* 10 */
 .menu {
     justify-content: space-around; /* расположение меню  */
     align-items: center;
@@ -54,22 +59,22 @@ body {
 .menu__link, /* чтобы ссылочки не подчеркивались */
 .logo__link, 
 .shop__buy,
-.shop__title {
+.shop__title,
+.link {
     text-decoration: none;
 }
 
-/* 20 */
 .menu__link:hover, /* чтобы ссылочки подчеркивались при наведении */
 .logo__link:hover,
 .shop__buy:hover,
-.shop__title:hover {
+.shop__title:hover,
+.link:hover {
     text-decoration: underline;
 }
 
 .dropdown_form__item {
     position: relative;
     margin-bottom: 1%;
-
 }
 
 .dropdown_form {
@@ -112,6 +117,7 @@ body {
 .primary {
     width: 60%;
     margin: 0 auto;
+    padding: 2%;
 }
 
 h2 {
@@ -121,7 +127,7 @@ h2 {
     margin-right: 5%;
 }
 
-.shop__wrap {
+.shop {
     flex-wrap: wrap;
 }
 
@@ -131,7 +137,6 @@ h2 {
     border: 1px solid rgb(7, 15, 7);
     margin: 1%;
     background-color:rgba(	135,206,250, 0.8);
-  
 }
 
 .shop__img {
@@ -152,24 +157,27 @@ h2 {
     padding: 2%;
 }
     
-
-.footer {
-    position: fixed;
-    bottom: 0;
+.footer { 
     width: 100%;
-    background-color:rgba(152, 251, 152, 0.3);   
+    background-color:rgba(152, 251, 152, 0.3); 
+    padding: 1%;  
 }
 
 .footer__title,
 .footer__form {
     font-size: 1.5rem;
     text-align: center;
-    margin: 1%;
-    
+    margin: 1%;  
 }
+
 .footer__input {
     padding: 0.7%;
     background-color:rgba(152, 251, 152, 0.5);
-    
 }
 
+.fixed {
+    position: fixed;
+    padding: 2%;
+    top: 0;
+    left: 0;  
+}

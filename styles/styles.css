@@ -1,6 +1,11 @@
+body {
+    background: url(../img/beautiful-coconut-palm-trees-6532.jpg) no-repeat center center fixed;
+    background-size: cover;  
+}
+
 
 .header,
-.primary__wrap,
+.shop,
 .logo__link,
 .menu,
 .search__menu {
@@ -35,7 +40,7 @@
 }
 
 .header {
-    background-color: rgba(152, 251, 152, 0.5)  
+    background-color: rgba(152, 251, 152, 0.8)  
 }
 
 /* 10 */
@@ -47,13 +52,17 @@
 }
 
 .menu__link, /* чтобы ссылочки не подчеркивались */
-.logo__link {
+.logo__link, 
+.shop__buy,
+.shop__title {
     text-decoration: none;
 }
 
 /* 20 */
 .menu__link:hover, /* чтобы ссылочки подчеркивались при наведении */
-.logo__link:hover {
+.logo__link:hover,
+.shop__buy:hover,
+.shop__title:hover {
     text-decoration: underline;
 }
 
@@ -81,12 +90,6 @@
     display: block;
 }
 
-.main {
-    background: url(../img/beautiful-coconut-palm-trees-6532.jpg) no-repeat;
-    background-size: 100%;
-    height: 1000px;  
-}
-
 .search__menu {
     padding: 1%;
     background-color: rgba(152, 251, 152, 0.5)
@@ -107,15 +110,66 @@
 }
 
 .primary {
-    width: 85%;
-    background-color: aliceblue;
+    width: 60%;
     margin: 0 auto;
 }
 
-.primary__item {
-    width: 2%5;
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2%;
+    margin-right: 5%;
 }
 
-.primary__img {
-    width: 100%;
+.shop__wrap {
+    flex-wrap: wrap;
 }
+
+.shop__item {
+    width: 30%;
+    padding: 2%;
+    border: 1px solid rgb(7, 15, 7);
+    margin: 1%;
+    background-color:rgba(	135,206,250, 0.8);
+  
+}
+
+.shop__img {
+    width: 100%;
+    padding: 1%;
+    border: 1px solid rgb(7, 15, 7);
+}
+
+.shop__buy,
+.shop__title {
+    padding: 3%;
+    margin: 1%;
+    font-size: 1.5rem;
+    color: rgb(13, 32, 13);
+}
+
+.shop__description {
+    padding: 2%;
+}
+    
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(152, 251, 152, 0.3);   
+}
+
+.footer__title,
+.footer__form {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1%;
+    
+}
+.footer__input {
+    padding: 0.7%;
+    background-color:rgba(152, 251, 152, 0.5);
+    
+}
+

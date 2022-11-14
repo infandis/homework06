@@ -1,63 +1,64 @@
-body {
+body { /**/
     background: url(../img/beautiful-coconut-palm-trees-6532.jpg) no-repeat center center fixed;
-    background-size: cover;  
+    background-size: cover;  /**/
 }
 
-.header,
+.header, /**/
 .shop,
 .logo__link,
 .menu,
 .search__menu {
     display: flex; 
-    flex-direction: row;
+    flex-direction: row; /**/
 }
 
-.header,
-.search__menu { 
-    justify-content: space-around;
+.header, /**/
+.search__menu,
+.menu { 
+    justify-content: space-around; /**/
 }
 
 .logo { /* общая ширина логотипа */
     width: 10%; 
 }
 
-.logo__link { /* чтобы в логотипе всё шло в строчку */
+.logo__link { /*  */
     justify-content: center;
     align-items: center;
 }
 
 .menu__link, /* цвет текста */
-.logo__text {
+.logo__text,
+.shop__buy,
+.shop__title {
     color: black;
 }
 
-.logo__picture {
+.logo__picture { /**/
     width: 50%;
-    padding: 2%;
+    padding: 2%; /**/
 }
 
-.wrap {
-    width: 80%;
-    margin: 0 auto;
+.wrap { /**/
+    width: 80%; 
+    margin: 0 auto; /**/
     padding: 1%;
     font-size: 1.2rem;
-    margin-top: 2%;
-}
-.header,
-.wrap {
-    background-color: rgba(152, 251, 152, 0.8);
-    
 }
 
-.menu {
-    justify-content: space-around; /* расположение меню  */
+.header, /**/
+.wrap {
+    background-color: rgba(152, 251, 152, 0.8);
+}
+
+.menu { /**/ /* расположение меню  */
     align-items: center;
     width: 40%;
     margin: 1%;   
 }
 
 .menu__link, /* чтобы ссылочки не подчеркивались */
-.logo__link, 
+.logo__link, /**/
 .shop__buy,
 .shop__title,
 .link {
@@ -65,102 +66,101 @@ body {
 }
 
 .menu__link:hover, /* чтобы ссылочки подчеркивались при наведении */
-.logo__link:hover,
+.logo__link:hover,/**/
 .shop__buy:hover,
 .shop__title:hover,
 .link:hover {
     text-decoration: underline;
 }
 
-.dropdown_form__item {
-    position: relative;
+.dropdown_form__item {/**/
+    position: relative; /**/
     margin-bottom: 1%;
 }
 
-.dropdown_form {
-    position: absolute;
-    display: none; 
+.dropdown_form { /**/
+    position: absolute; /**/
+    display: none; /**/
     background-color: rgba(152, 251, 152, 0.8);
     padding: 1%;  
 }
 
-.dropdown_form__submit {
-    width: 40%;
+.dropdown_form__submit { /**/
+    width: 40%; 
     margin-top: 5%;
     color: white;
     background-color:olivedrab;
 }
 
-.menu__item:hover .dropdown_form {
-    display: block;
+.menu__item:hover .dropdown_form { /**/
+    display: block; /**/
 }
 
-.search__menu {
+.search__menu { /**/
     padding: 1%;
     background-color: rgba(152, 251, 152, 0.5)
 }
 
-.search__submit{
+.search__submit { /**/
     width: 300%;
     margin-top: 20%;
     padding: 20%;
     background-color:rgba(152, 251, 152);
 }
 
-.search__text,
+.search__text, /**/
 .search__select,
 .search__date {
     padding: 3%;
     width: 100%;
 }
 
-.primary {
+.primary { /**/
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto; /**/
     padding: 2%;
 }
 
-h2 {
-    font-size: 2rem;
+h2 { /**/
+    font-size: 2rem; 
     text-align: center;
     margin: 2%;
     margin-right: 5%;
 }
 
-.shop {
-    flex-wrap: wrap;
+.shop { /**/
+    flex-wrap: wrap; /**/
 }
 
-.shop__item {
+.shop__item {/**/
     width: 30%;
     padding: 2%;
     border: 1px solid rgb(7, 15, 7);
     margin: 1%;
-    background-color:rgba(	135,206,250, 0.8);
+    background-color:rgba(	135,206,250, 0.7);
 }
 
-.shop__img {
+.shop__img { /**/
     width: 100%;
-    padding: 1%;
     border: 1px solid rgb(7, 15, 7);
 }
 
 .shop__buy,
 .shop__title {
-    padding: 3%;
-    margin: 1%;
-    font-size: 1.5rem;
-    color: rgb(13, 32, 13);
+    font-size: 1.5rem; 
 }
 
-.shop__description {
-    padding: 2%;
+.shop__description,
+.shop__img,
+.shop__img {
+    padding: 1.5%;
+    margin: 1%;
 }
     
 .footer { 
     width: 100%;
-    background-color:rgba(152, 251, 152, 0.3); 
     padding: 1%;  
+    background-color:rgba(152, 251, 152, 0.3); 
 }
 
 .footer__title,

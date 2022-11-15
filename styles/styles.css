@@ -65,9 +65,8 @@ body { /*1*/
     text-decoration: none;
 }
 
-.menu__link:hover, /* чтобы ссылочки подчеркивались при наведении */
-.logo__link:hover,/*20*/
-.shop__buy:hover,
+.menu__link:hover, /*20*/
+.shop__buy:hover, /* чтобы ссылочки подчеркивались при наведении */
 .shop__title:hover,
 .link:hover {
     text-decoration: underline;
@@ -102,17 +101,14 @@ body { /*1*/
 }
 
 .search__submit { /*10*/
-    width: 300%;
+    width: 200%;
     margin-top: 20%;
     padding: 20%;
     background-color:rgba(152, 251, 152);
 }
 
-.search__text, /*10*/
-.search__select,
-.search__date {
-    padding: 3%;
-    width: 100%;
+.search__item { /*10*/
+    padding: 1%;
 }
 
 .primary { /*10*/
@@ -175,4 +171,14 @@ h2 { /*1*/
     padding: 2%;
     top: 0;
     left: 0;  
+}
+
+.country_images { /*10*/
+    float: left;
+    width: 30%;
+    padding: 1%;
+}
+
+.paragraph { /*10*/
+    text-indent: 3%;
 }

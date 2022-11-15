@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <wrapper class="wrapper">
+        <div class="wrapper">
             <header class="header">
                 <div class="logo"> <!-- Кликабельный логотип -->
                     <h1 class="logo__title">
@@ -21,7 +21,7 @@
                 </div>
                 <ul class="menu"> <!-- Верхушка с меню -->
                     <li class="menu__item">
-                        <a href="pages/index.html" class="menu__link"> <!-- Ссылка на вторую страницу -->
+                        <a href="pages/page.html" class="menu__link"> <!-- Ссылка на вторую страницу -->
                             КРАЇНИ
                         </a>
                     </li>
@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li class="menu__item"> 
-                        <a href="#FOOTER" class="menu__link"> <!-- Якорь -->
+                        <a href="#footer" class="menu__link"> <!-- Якорь -->
                             ДОПОМОГА З ТУРОМ
                         </a>
                     </li>
@@ -41,7 +41,7 @@
                         </a>
                         <form action="https://fom.in.ua/echo" class="dropdown_form">
                             <p class="dropdown_form__item">
-                                <input class= "dropdown_form__email" type="email" name="email" autofocus="autofocus" placeholder="user@domain.com"> 
+                                <input class= "dropdown_form__email" type="email" name="email" autofocus="autofocus" placeholder="user@domain.com" autocomplete="off" > 
                             </p>
                             <p class="dropdown_form__item"> 
                                 <input class="dropdown_form__password" type="password" name="password" placeholder="password"> 
@@ -59,7 +59,7 @@
                         <ul class="search__menu">
                             <li class="search__item">
                                 ЗВІДКИ:
-                                <select name="select" class="search__select">
+                                <select name="select" class="search__input">
                                     <option value="Kiyv">
                                         Київ
                                     </option>
@@ -76,11 +76,11 @@
                             </li>
                             <li class="search__item"> 
                                 КУДИ:
-                                <input type="text" name="text" class="search__text" value="" placeholder="Введіть країну чи місто">                                           
+                                <input type="text" name="text" class="search__input" value="" placeholder="Введіть країну чи місто">                                           
                             </li>
                             <li class="search__item">                           
                                 ДАТА ВИЛЬОТУ:
-                                <input type="date" name="date" class="search__date" min="2022-11-13" max="2023-07-30"/>                            
+                                <input type="date" name="date" class="search__input" min="2022-11-13" max="2023-07-30">                            
                             </li>
                             <li class="search__item">                     
                                 <input class="search__submit" type="submit" value="ШУКАТИ">
@@ -137,7 +137,7 @@
                 </div>
             </main> 
             <div class="footer"> <!--Футер с формой, якорь -->
-                <p class="footer__title" id="FOOTER">
+                <p class="footer__title" id="footer">
                     Хочете швидко підібрати тур? Наш експерт вам допоможе!
                 </p>
                 <form action="https://fom.in.ua/echo" class="footer__form">
@@ -146,6 +146,6 @@
                     <input type="submit" value="Залишити заявку" class="footer__input">
                 </form>
             </div>
-        </wrapper>
+        </div>
     </body>
 </html>
